@@ -20,7 +20,7 @@ div{
 } */
 .content{
     margin-top:-5px;
-    width: 100%;
+    width:1519px;
     height: 600px;
     background-image: url("./anh/background.png");
     background-size: cover;
@@ -112,8 +112,6 @@ ul li:hover a{
     top: 18%;
     display: none;
 }
-.show{display: block;}
-.show1{display: none;}
 .ban1, .ban21{
     height: 40px;
     width: 120px;
@@ -127,7 +125,7 @@ ul li:hover a{
     left: 48%;
     width: 800px;
 }
-.mon1, .mon2{
+.mon1, .mon2, .mon3{
     height: 40px;
     width: 150px;
     margin: 10px;
@@ -136,8 +134,58 @@ ul li:hover a{
    background:  rgb(247, 119, 35);
    border: 0;
 }
-.mon2{
+.mon2, .mon3{
     background: rgb(4, 226, 4);
     border: 0;
     border-radius: 15px;
+}
+.mon22, .mon23{
+    display: none;
+}
+.thanhtoan{
+    position: relative;
+    top: -45px;
+    width: 1000px;
+    height: 60px;
+    margin: auto
+}
+.thanhtoan1 .sl{
+    width: 100px;
+    height: 30px;
+}
+.thanhtoan1 p{
+    float: left;
+    color: red;
+    /* text-decoration: underline; */
+    text-transform: uppercase;
+    margin: 6px;
+}
+.tongtien{
+    position: relative;
+    top: -30px;
+    left:100px;
+}
+.tongtien p{
+    float: left;
+    color: red;
+    /* text-decoration: underline; */
+    text-transform: uppercase;
+    margin: 6px;
+}
+.ip{
+    float: left;
+    margin-top: 2px;
+    height: 25px;
+    width: 85px;
+}
+.bt{
+    float: left;
+    margin-left: 150px;
+    margin-top: -25px;
+}
+.bt .bt11{
+    height: 30px;
+    width: 85px;
+    border: 0;
+    background: rgb(14, 209, 118);
 }

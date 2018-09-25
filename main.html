@@ -53,15 +53,30 @@
             <div id="kv">
                 <script>
                     // document.getElementById("kv1").onclick = function () {
-                //     khuVuc1();
-                   // };
+                    //     khuVuc1();
+                    // };
                     function khuVuc1() {
-                        document.getElementById("ban").style.display='block';
-                        document.getElementById("ban2").style.display='none';
+                        document.getElementById("ban").style.display = 'block';
+                        document.getElementById("ban2").style.display = 'none';
                     }
                     function khuVuc2() {
-                        document.getElementById("ban").style.display='none';
-                        document.getElementById("ban2").style.display='block';
+                        document.getElementById("ban").style.display = 'none';
+                        document.getElementById("ban2").style.display = 'block';
+                    }
+                    function Bia() {
+                        document.getElementById("bia").style.display = 'block';
+                        document.getElementById("cf").style.display = 'none';
+                        document.getElementById("nuoc").style.display = 'none';
+                    }
+                    function cafe() {
+                        document.getElementById("bia").style.display = 'none';
+                        document.getElementById("cf").style.display = 'block';
+                        document.getElementById("nuoc").style.display = 'none';
+                    }
+                    function Nuoc() {
+                        document.getElementById("bia").style.display = 'none';
+                        document.getElementById("cf").style.display = 'none';
+                        document.getElementById("nuoc").style.display = 'block';
                     }
                 </script>
                 <button id="kv1" class="kv1" onclick="khuVuc1();">Khu vực 1</button>
@@ -93,22 +108,68 @@
                 <button class="ban21">Bàn 20</button>
             </div>
             <div class="mon">
-                <button class="mon1">Bia rượ,đồ lon</button>
-                <button class="mon1">Cà phê</button>
-                <button class="mon1">Nước hoa quả</button>
+                <button class="mon1" onclick="Bia();">Bia rượu,đồ lon</button>
+                <button class="mon1" onclick="cafe();">Cà phê</button>
+                <button class="mon1" onclick="Nuoc();">Nước hoa quả</button>
                 <button class="mon1">Rượu ngoại</button>
                 <button class="mon1">Sinh tố</button>
                 <button class="mon1">Thuốc lá-trà</button>
                 <button class="mon1">Khác</button>
                 <button class="mon1">Nhóm giờ hát</button>
-                <button class="mon2">Cocacola</button>
-                <button class="mon2">Bia Hà Nội </button>
-                <button class="mon2">Bia ken</button>
-                <button class="mon2">Bò húc</button>
-                <button class="mon2">Rượu Ms 5 năm</button>
-                <button class="mon2">Rượu Ms 8 năm</button>
-                <button class="mon2">Rượu Ms tem</button>
-                <button class="mon2">Rượu Ms xanh</button>
+                <div class="ds">
+                    <div id="bia" class="mon21">
+                        <button class="mon2">Cocacola</button>
+                        <button class="mon2">Bia Hà Nội </button>
+                        <button class="mon2">Bia ken</button>
+                        <button class="mon2">Bò húc</button>
+                        <button class="mon2">Rượu Ms 5 năm</button>
+                        <button class="mon2">Rượu Ms 8 năm</button>
+                        <button class="mon2">Rượu Ms tem</button>
+                        <button class="mon2">Rượu Ms xanh</button>
+                    </div>
+                    <div id="cf" class="mon22">
+                        <button class="mon3">Cafe đen đá</button>
+                        <button class="mon3">Cafe đen nóng</button>
+                        <button class="mon3">Cafe nâu lắc</button>
+                        <button class="mon3">Cafe nâu đá</button>
+                    </div>
+                    <div id="nuoc" class="mon23">
+                        <button class="mon3">Cam ép</button>
+                        <button class="mon3">Chanh muối</button>
+                        <button class="mon3">Chanh tươi</button>
+                        <button class="mon3">Đĩa bưởi</button>
+                        <button class="mon3">Đĩa hoa quả</button>
+                        <button class="mon3">Đĩa dưa hấu</button>
+                        <button class="mon3">7 up</button>
+                        <button class="mon3">Pepsi</button>
+                        <button class="mon3">Sting</button>
+                        <button class="mon3">Bò húc</button>
+                        <button class="mon3">Coca</button>
+                        <button class="mon3">Nước dừa</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="thanhtoan">
+            <div class="thanhtoan1">
+                <p>Cửa hàng</p>
+                <select class="sl">
+                    <option value="">Cửa hàng 1</option>
+                    <option value="">Cửa hàng 2</option>
+                </select>
+            </div>
+            <div class="tongtien">
+                <p>Tổng tiền</p>
+                <input class="ip" type="text">
+            </div>
+            <div class="bt">
+                <button class="bt11">Thanh toán</button>
+                <button class="bt11">Lưu</button>
+                <button class="bt11">In</button>
+                <button class="bt11">Bỏ qua</button>
+                <button class="bt11">Tìm lại</button>
+                <button class="bt11">Xóa</button>
             </div>
         </div>
     </div>
